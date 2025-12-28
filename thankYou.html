@@ -11,14 +11,14 @@
       padding: 0;
       box-sizing: border-box;
     }
-  
+
     .header {
       padding-bottom: 0px;
       background-color: #ebe8e3;
       min-height: 100vh;
       padding-top: 180px;
     }
-  
+
     .header-container {
       margin-left: auto;
       margin-right: auto;
@@ -29,7 +29,7 @@
       padding-left: 20px;
       padding-right: 20px;
     }
-  
+
     .hero-left {
       max-width: 903px;
       width: 100%;
@@ -37,18 +37,19 @@
       flex-direction: column;
       align-items: center;
     }
-  
+
     .hero-title {
       font-family: "Bebas Neue", sans-serif;
       font-weight: 700;
-      font-size: 96px;
+      font-size: 92px;
       line-height: 100%;
       text-align: center;
       margin-bottom: 25px;
       text-transform: uppercase;
       max-width: 622px;
+      width: 100%;
     }
-  
+
     .hero-text {
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
@@ -57,16 +58,16 @@
       margin-bottom: 58px;
       max-width: 522px;
     }
-  
-    .hero-text > span {
+
+    .hero-text>span {
       color: #ff0000;
     }
-  
+
     .hero-btn-box {
       max-width: 585px;
       width: 100%;
     }
-  
+
     .hero-img {
       display: flex;
       align-items: center;
@@ -76,7 +77,7 @@
       margin-right: auto;
       text-align: center;
     }
-  
+
     .hero-btn {
       display: flex;
       align-items: center;
@@ -99,29 +100,29 @@
       text-decoration: none;
       max-height: 142px;
     }
-  
+
     @media (max-width: 500px) {
       .header {
         padding-top: 30%;
         padding-bottom: 0px;
         background-image: none;
       }
-  
+
       .hero-left {
         display: block;
       }
-  
+
       .header-container {
         text-align: center;
         padding-left: 10px;
         padding-right: 10px;
       }
-  
+
       .hero-title {
         font-size: 40px;
         margin-bottom: 5px;
       }
-  
+
       .hero-text {
         font-size: 14px;
         margin-bottom: 28px;
@@ -130,12 +131,12 @@
         margin-left: auto;
         margin-right: auto;
       }
-  
+
       .hero-img {
         margin-bottom: 24px;
         height: 69px;
       }
-  
+
       .hero-btn {
         font-size: 32px;
         padding: 23px 0 20px;
@@ -147,11 +148,11 @@
       }
     }
   </style>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700&display=swap">
+
+  <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="./css/main.css" />
+  </noscript>
   <meta name="facebook-domain-verification" content="fyv76eul7itcmhr7craomazbgm2cbp" />
 </head>
 
@@ -161,7 +162,7 @@
       <div class="hero-left">
         <h2 class="hero-title">oxirgi qadam qoldi!</h2>
         <p class="hero-text">
-          Bepul darsni qo’lga kiritish uchun quyidagi tugma orqali telegram kanalga <span>obuna bo’ling</span>
+          Bepul darsni qo’lga kiritish uchun <br> quyidagi tugma orqali telegram kanalga <br> <span>obuna bo’ling</span>
         </p>
         <div class="hero-btn-box">
           <img class="hero-img" src="./images/strelka.svg" loading="lazy" decoding="async" alt="Arrow icon" />
@@ -177,7 +178,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
