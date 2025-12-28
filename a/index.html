@@ -13,6 +13,7 @@
   <noscript>
     <link rel="stylesheet" href="./css/modal.css" />
   </noscript>
+  <meta name="facebook-domain-verification" content="fyv76eul7itcmhr7craomazbgm2cbp" />
 </head>
 
 <body>
@@ -122,11 +123,30 @@
   </div>
 
   <script defer>
-document.addEventListener("DOMContentLoaded",(()=>{const t=document.getElementById("timer");let e=120;const n=setInterval((()=>{const a=Math.floor(e/60),o=e%60;t.textContent=`${String(a).padStart(2,"0")}:${String(o).padStart(2,"0")}`,e<=0&&clearInterval(n),e--}),1e3)}));
+    document.addEventListener("DOMContentLoaded", (() => { const t = document.getElementById("timer"); let e = 120; const n = setInterval((() => { const a = Math.floor(e / 60), o = e % 60; t.textContent = `${String(a).padStart(2, "0")}:${String(o).padStart(2, "0")}`, e <= 0 && clearInterval(n), e-- }), 1e3) }));
   </script>
   <script defer src="../js/app.js"></script>
   <script defer src="../js/phoneFormatter.js"></script>
   <script defer src="../js/thankYou.js"></script>
+
+
+  <!-- Meta Pixel Code -->
+<script defer>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '533366492856889');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=533366492856889&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </body>
 
 </html>
